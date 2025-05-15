@@ -20,7 +20,7 @@ const movieInfo = document.querySelector("#movieInfo");
 
 
 const showMovieDetails = (imdbID) => {
-    fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=2845724f`)
+    fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=2845724f`)
     .then(response => response.json())
     .then((data) => {
         const genre_html = data.Genre.split(", ").map(
