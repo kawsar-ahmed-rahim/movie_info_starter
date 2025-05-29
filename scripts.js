@@ -89,7 +89,7 @@ const showMovieDetails = (imdbID) => {
 
 const searchMovie = (title) => {
     fetch(
-        `http://www.omdbapi.com/?i=tt3896198&apikey=2845724f&s=${title}`
+        `https://www.omdbapi.com/?i=tt3896198&apikey=2845724f&s=${title}`
     )
     .then(response => response.json())
     .then((data) => {
